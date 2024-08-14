@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <title>Crear Usuario</title>
+</head>
+<header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark text-uppercase fw-bold " style="background-color: #ffce3c;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><box-icon name='leaf' type='solid' size="lg"></box-icon></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 fs-4 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./flores.html">Catalogo</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./carrito.html"><box-icon type="solid" name="cart" animation='tada-hover'
+                size="md"></box-icon></a>
+          </li>
+          <li class="nav-item dropdown dropstart">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <box-icon type="solid" name="user-circle" size="md"></box-icon>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./iniciarSesion.html">Iniciar sesión</a></li>
+              <li><a class="dropdown-item" href="./crearUsuario.html">Crear usuario</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<body>
+
+  <div class="content bg-light rounded w-50 mt-5 mb-5 m-auto row align-items-center m-5">
+    <h1>Creación de usuario</h1>
+    <form action="" id="formularioCrearUsuario">
+      <br>
+      <div class="mb-3">
+        <label for="txtNombre">Nombre</label>
+        <input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Escribe tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="txtApellido">Apellido</label>
+        <input type="text" class="form-control" id="txtApellido" name="txtApellido" placeholder="Escribe tu apellido">
+      </div>
+      <div class="mb-3">
+        <label for="inputNac">Fecha de nacimiento</label>
+        <br>
+        <input type="date" class="form-control" id="inputNac" name="inputNac">
+      </div>
+      <div class="mb-3">
+        <label for="txtDireccion">Dirección (opcional)</label>
+        <input type="text" class="form-control" id="txtDireccion"  name="txtDireccion" placeholder="Ingrese su dirección">
+      </div>
+      <div class="mb-3">
+        <label for="txtUsuario">Usuario</label>
+        <input type="text" class="form-control" id="txtUsuario" name="txtUsuario" placeholder="Ingrese su usuario">
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Escribe tu email">
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Escribe tu Contraseña">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="inputCheck" name="inputCheck">
+        <label class="form-check-label" for="inputCheck">Acepta los terminos y servicios</label>
+      </div>
+      <!-- <button type="submit" class="btn btn-primary m-3">CREAR</button> -->
+      <!-- Button trigger modal -->
+      <button type="submit" class="btn m-3 fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+        style="background-color: #ffce3c; color: white;">
+        CREAR Usuario
+      </button>
+
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="staticBackdropLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-5">
+              El usuario ha sido creado con exito.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <a href="./index.html"><button type="button" class="btn fw-bold"
+                  style="background-color: #ffce3c; color: white;">Entendido</button></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </form>
+  </div>
+
+  <footer>
+    <div class="contenedorFooter fw-bold" style="color: white;">
+      <div class="miniBox">
+        <div class="box m-3">
+          <p>Av. Los Pajaritos 4444, Maipú, Región Metropolitana</p>
+          <p>600 600 4020</p>
+          <p>mail@gmail.com</p>
+        </div>
+      </div>
+      <div class="miniBox">
+        <div class="box">
+          <p><a href="https://www.facebook.com"><box-icon type='logo' name='facebook'></box-icon></a></p>
+          <p><a href="https://www.instagram.com"><box-icon name='instagram' type='logo'></box-icon></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+  
+  <script src="js/Jquery.js"></script>
+</body>
+</html>
